@@ -11,6 +11,7 @@ $message = $_POST['message'];
 //Validate first
 if(empty($name)||empty($visitor_email)) 
 {
+	echo "<a href='contact.html'>&lt;Back</a><br/>";
     echo "Name and email are mandatory!";
     exit;
 }
@@ -32,7 +33,7 @@ $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
-header('Location: index.html');
+header('Location: contact.html');
 
 
 // Function to validate against any email injection attempts

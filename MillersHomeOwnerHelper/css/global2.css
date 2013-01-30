@@ -1,0 +1,105 @@
+/***************** MILLERSHOMEOWNERHELPER.COM CSS BY KEVIN REYNOLDS*************/
+
+/* Red #A01B2B */
+
+
+/*************** General Styles *****************/
+* {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/*************** Nav Styles *****************/
+
+.active {
+	font-weight: bold;
+	text-decoration: underline;
+	
+	
+}
+
+.navbar ul.nav li {
+	font-size: 20px;
+}
+
+
+/* Hero */
+.hero-unit { 
+/* 	background: url('http://badasdesign.com/mdd/aboutme/img/abstract.jpg'); */
+	background: url('../img/bg.jpg') no-repeat;
+	color: #fff !important;
+	text-shadow: 2px 1px 2px #000;
+	filter: dropshadow(color=#000, offx=2, offy=1);
+	-webkit-box-shadow:  2px 2px 6px 1px rgba(00, 00, 00, .6);
+	box-shadow:  2px 2px 6px 1px rgba(00, 00, 00, .6);
+
+}
+
+.hero-unit p {
+	font-size: 18px;
+}
+
+.span3 {
+	-webkit-box-shadow:  2px 2px 6px 1px rgba(00, 00, 00, .6);    
+    box-shadow:  2px 2px 6px 1px rgba(00, 00, 00, .6);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 20px;
+	padding: 10px 40px 20px;
+	min-height: 260px !important;
+}
+
+form {
+	padding-left: 15px;
+}
+
+/* Footer */
+footer {
+	color: #fff;
+	height: 25px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 30px;
+	border: 1px solid #d4d4d4;
+	*zoom: 1;
+	
+	background-color: #1b1b1b;
+	background-image: -moz-linear-gradient(top, #222222, #111111);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+	background-image: -webkit-linear-gradient(top, #222222, #111111);
+	background-image: -o-linear-gradient(top, #222222, #111111);
+	background-image: linear-gradient(to bottom, #222222, #111111);
+	background-repeat: repeat-x;
+	border-color: #252525;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+}
+
+footer a {
+	color: #fff;
+	margin-left:15px;
+}
+
+footer a img {
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.span12 li{
+	list-style-type: none !important;
+	float: left;
+	padding: 5px;
+	margin: 5px;
+}
+
+#tabs-1 li, #tabs-2 li {
+	-webkit-box-shadow:  2px 2px 6px 1px rgba(00, 00, 00, .6);
+	box-shadow:  2px 2px 6px 1px rgba(00, 00, 00, .6);
+}
+
+#tabs-1 li:hover, #tabs-2 li:hover {
+	background-color: #A01B2B;
+}
+
+label {
+	width: 150px;
+}

@@ -1,141 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<script type="text/javascript" src="js/prototype.js"></script>
+		<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+		<script type="text/javascript" src="js/lightbox.js"></script>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Millers Homeowners Helper</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta name="description" content="The website of John Miller. ">
-	    <meta name="author" content="Kevin Reynolds">
+		<title>Millers Homeowners Helper - Contact</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/global.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="keywords" content="millers homeowners helper, millers homeowner helper, building, carpentry, contractor, repair, deck, rot repair, rot, house, residential, commercial, projects, job, project, commercial projects, residential projects, homeowner projects, custom build, build, service, massachusetts, new england, boston "/>
+		<meta name="description" content="This page is used to contact John Miller directly. "/>
+	</head>
+	
+	<body>
+	<div id="empty-header"><!-- Star Header -->
+			<div id="header">
+			
+				<a href="index.php"><img src="images/MillersLogo.png" alt="Miller's Homeowner's Helper's 						Logo"/></a>
+				<p>Phone: 978-987-6568 <br /> Fax: 978-670-1308 </p>
+				
+			</div><!-- End Header -->	
+		</div>
+		
+	<div id="container"><!-- Start Container -->
+			
+		<div id="nav"><!-- Start Nav -->
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/global2.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
-
-<!--     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
-  </head>
-
-  <body>
-
-<div class="navbar">
-	  <div class="navbar-inner">
-	    <div class="container">
-	 
-	      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-	      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </a>
-	 
-	      <!-- Be sure to leave the brand out there if you want it shown -->
-	      <a href="index.html" class="pull-left brand"><img src="img/MillersLogo.png" alt="Miller's Homeowner's Helper's Logo"/></a>
-	 
-	      <!-- Everything you want hidden at 940px or less, place within here -->
-	      <div class="nav-collapse collapse tabs-below">
-	      	<ul class="nav nav-tabs ">
+			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="pictures.html">Pictures</a></li>
-				<li class="active"><a href="contact.html">Contact</a></li>
-				<li><a href="services.html">Services</a></li> <!-- .nav, .navbar-search, .navbar-form, etc -->
-	      	</ul>
-	      	
-	      		<p class="pull-right">Phone: 978-987-6568 <br /> Fax: 978-670-1308 </p>
-	      </div>
-	 
-	    </div>
-	  </div>
-	</div>
-
-
-    <div class="container">
-
-      <div class="row">
-        <div class="span6">
-
+				<li><a class="active" href="#">Contact</a></li>
+				<li><a href="services.html">Services</a></li>
+			</ul>
+		</div><!-- End Nav -->
+		
+		<div id="content"><!-- Start Content -->
 			<!-- Start code for the form-->
 			
-			
-				<form id="formcontent" method="post" name="myemailform" action="message.php">
+			<div class="float-left">
+				<form id="formcontent" method="post" name="myemailform" action="test.php">
 					<p>
-					<label id="name" for='name'>Enter Name<em>*</em>: </label><br>
-					<input id="nameInput" type="text" name="name">
+					<label for='name'>Enter Name<em>*</em>: </label><br>
+					<input type="text" name="name">
 					</p>
 					
 					<p>
-					<label id="email" for='email'>Enter Email Address<em>*</em>:</label><br>
-					<input id="emailInput" type="text" name="email">
+					<label for='email'>Enter Email Address<em>*</em>:</label><br>
+					<input type="text" name="email">
 					</p>
 					
 					<p>
-					<label id="message" for='message'>Enter Message:</label> <br>
-					<textarea  id="messageInput" rows="8" cols="35" name="message"></textarea>
+					<label for='message'>Enter Message:</label> <br>
+					<textarea  rows="8" cols="35" name="message"></textarea>
 					</p>
 					
 					<input id="submit" type="submit" name='submit' value="Submit">
 	
-				</form>	
-
-        </div>
-        
-        <div class="span6">
-  				<h3>
-					Please use the form to contact Millers Home Owners Helper directly, with any 						requests, questions, or comments.
-				</h3>
+				</form>
 				
-				<h3>
+				<script language="JavaScript">
+					// Code for validating the form
+					// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+					// for details
+					var frmvalidator  = new Validator("myemailform");
+					frmvalidator.addValidation("name","req","Please provide your name"); 
+					frmvalidator.addValidation("email","req","Please provide your email"); 
+					frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+				</script>
+			</div>
+			<div class="contact-sidebar-fix">
+				<p>
+					Please use the form on the left to contact Millers Home Owners Helper directly, with any 						requests, questions, or comments.
+				</p>
+				
+				<p>
 					Make sure to include your name, and email address so we can reply back.
-				</h3>
-
-        </div>
-
-      </div>
-
-      <hr>
-
-      <footer class="navbar-fixed-bottom">
-		<a href="http://www.badasdesign.com"><img src="img/badaslogo.png" alt="badas logo!"/>Badas Design 2013&copy;</a>
-      </footer>
-
-    </div> <!-- /container -->
-
-
-   <! ======================JS============================ -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/js/gen_validatorv31.js"></script>
-	<script language="JavaScript">
-		// Code for validating the form
-		// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-		// for details
-		var frmvalidator  = new Validator("myemailform");
-		frmvalidator.addValidation("name","req","Please provide your name"); 
-		frmvalidator.addValidation("email","req","Please provide your email"); 
-		frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-	</script>
-	
-	<script>
-		$('#name').click(function() {
-			$('#nameInput').focus();
-    	});
-    	
-		$('#email').click(function() {
-			$('#emailInput').focus();
-    	});
-    	
-		$('#message').click(function() {
-			$('#messageInput').focus();
-    	});
-	</script>
-
-  </body>
-</html>
+				</p>
+			</div>
+		</div><!-- End Content -->	
+		
+		
+		
+		<div id="footer"><!-- Start Footer -->
+			<p>
+			<img src="images/badaslogo.png" alt="badas logo!"/>
+			<a href="http://www.badasdesign.com">Badas Design 2012&copy;</a>
+			</p>
+		</div><!-- End Footer -->	
+		
+	</div><!-- end Container -->
+	</body>
+</html> 
